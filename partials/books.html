@@ -1,0 +1,22 @@
+<h1>Books!</h1>
+
+<!-- bind the value of the input to scope using ng-model -->
+<!-- <input type="text" autofocus="true" placeholder="search by type: city, 
+    country, or region." ng-model="searchText"> -->
+
+<!-- bind the value of the checked radio to scope using ng-model -->
+<!-- <input type="radio" value="true" ng-model="edibility">Edible</input>
+<input type="radio" value="false" ng-model="edibility">Inedible</input> -->
+
+
+<!-- shroom refers to an individual item which is an object in the array
+     of objects which we bound to $scope as 'shrooms' in mushroomCtrl -->
+<!-- pipe each shroom through a filter. We are filtering the property "name"
+     by the value of 'searchText' and the value of 'edible' by the value of 'edibility' -->
+<div ng-repeat="book in books">
+
+    <h1>{{book.type}}</h1>
+    <h3>{{book.title}}</h3>
+    <p>{{book.price}}</p>
+
+</div>
